@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/popUpFragment">
+
+    <fragment
+        android:id="@+id/popUpFragment"
+        android:name="com.example.notesapp.fragments.PopUpFragment"
+        android:label="fragment_pop_up"
+        tools:layout="@layout/fragment_pop_up">
+        <action
+            android:id="@+id/action_popUpFragment_to_authFragment"
+            app:destination="@id/authFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_popUpFragment_to_PINCodeFragment"
+            app:destination="@id/PINCodeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_popUpFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/popUpFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.notesapp.fragments.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth">
+        <action
+            android:id="@+id/action_authFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/authFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.notesapp.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.notesapp.fragments.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note">
+        <action
+            android:id="@+id/action_addNoteFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="noteId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/PINCodeFragment"
+        android:name="com.example.notesapp.fragments.PINCodeFragment"
+        android:label="fragment_p_i_n_code"
+        tools:layout="@layout/fragment_p_i_n_code">
+        <action
+            android:id="@+id/action_PINCodeFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/PINCodeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

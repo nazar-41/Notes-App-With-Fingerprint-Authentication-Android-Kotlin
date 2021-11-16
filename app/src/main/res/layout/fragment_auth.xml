@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".fragments.AuthFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Create PIN Code For Emergency Situations"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/manrope_bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PIN  code"
+                android:textSize="20sp"
+                android:fontFamily="@font/manrope_bold"/>
+
+            <com.chaos.view.PinView
+                android:id="@+id/et_pin_code"
+                style="@style/PinWidget.PinView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="@color/white"
+                android:textColor="#1F1F1F"
+                app:hideLineWhenFilled="true"
+                app:itemCount="4"
+                app:itemRadius="10dp"
+                app:itemSpacing="10sp"
+                app:lineColor="@color/ColorBlueNote"
+                android:fontFamily="@font/manrope_bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repeat"
+                android:textSize="20sp"
+                android:fontFamily="@font/manrope_bold"/>
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/et_pin_code_repeat"
+                style="@style/PinWidget.PinView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:baselineAligned="false"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="@color/white"
+                android:textColor="#1F1F1F"
+                app:hideLineWhenFilled="true"
+                app:itemCount="4"
+                app:itemRadius="10dp"
+                app:itemSpacing="10sp"
+                app:lineColor="@color/ColorBlueNote"
+                tools:ignore="MissingClass"
+                android:fontFamily="@font/manrope_bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/save_bnt_background"
+                android:text="SAVE"
+                android:textColor="#69585f"
+                android:fontFamily="@font/manrope_bold"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Clear"
+                    android:textColor="@color/newHintColor"
+                    android:textSize="@dimen/_13ssp"
+                    android:fontFamily="@font/manrope_bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

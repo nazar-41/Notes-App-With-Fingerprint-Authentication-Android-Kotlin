@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#6fffe9</color>
+
+    <color name="colorPrimary">#171C26</color>
+    <color name="colorPrimary2">#ebf4f6</color>
+    <color name="colorPrimaryDark">#10141C</color>
+    <color name="colorAccent">#4e33ff</color>
+    <color name="ColorGray">#CACACA</color>
+    <color name="ColorLightBlack">#171C26</color>
+    <color name="ColorText">#96989F</color>
+    <color name="ColorDarkBlack">#10141C</color>
+    <color name="ColorYellow">#ffd633</color>
+    <color name="ColorBlue">#4e33ff</color>
+
+    <color name="newHintColor">#65737e</color>
+    <color name="newSearchBackgroundColor">#eaf4ff</color>
+
+    <color name="ColorDefaultNote">#ffffff</color>
+    <color name="ColorBlueNote">#add6ff</color>
+    <color name="ColorYellowNote">#f1c27d</color>
+    <color name="ColorWhiteNote">#ffffff</color>
+    <color name="ColorPurpleNote">#dec3c3 </color>
+    <color name="ColorGreenNote">#0aebaf</color>
+    <color name="ColorOrangeNote">#ffbbee</color>
+    <color name="ColorBlackNote"> #c0c5ce</color>
+</resources>
